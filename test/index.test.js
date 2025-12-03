@@ -1,6 +1,4 @@
-const {
-    createLoginTracker
-  } = require('../index');
+const createLoginTracker = require('../index');
   
   describe('createLoginTracker function', () => {
     const mockUser = {

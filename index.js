@@ -40,7 +40,7 @@ function createLoginTracker(userInfo) {
   return loginAttempt;
 }
 
-module.exports = createLoginTracker;
+module.exports = { createLoginTracker };
 
 // Demo/test code (runs only when executed directly)
 if (require.main === module) {

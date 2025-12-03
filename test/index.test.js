@@ -1,4 +1,4 @@
-const createLoginTracker = require('../index');
+const { createLoginTracker } = require('../index');
   
   describe('createLoginTracker function', () => {
     const mockUser = {
@@ -9,7 +9,7 @@ const createLoginTracker = require('../index');
       "username": "john_smith_24",
       "password": "securePassword"
     }
-    user1Login = createLoginTracker(mockUser);
+    user1Login = createLoginTracker(mockUser.username, mockUser.password);
     
     test('should return a function', () => {
       expect(typeof user1Login).toBe('function');
